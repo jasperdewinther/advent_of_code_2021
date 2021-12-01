@@ -8,5 +8,5 @@ Dir['./*'].sort.each do |file|
   timer_start = Time.now
   result = run input_text
   timer_end = Time.now
-  puts "#problem: #{file[2..-4]} found result #{result} in #{timer_end-timer_start} seconds"
+  puts "problem: #{file[2..-4]} found result #{result} in #{timer_end-timer_start} seconds"
 end
