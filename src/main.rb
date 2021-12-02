@@ -4,7 +4,7 @@ Dir['./*'].sort.each do |file|
   next unless file.end_with?('.rb') && file.start_with?('./day')
 
   require file
-  input_text = File.read("../input/#{file[2..-4]}.txt").split
+  input_text = File.read("../input/#{file[2..-4]}.txt").split("\n")
   timer_start = Time.now
   result = run input_text
   timer_end = Time.now
